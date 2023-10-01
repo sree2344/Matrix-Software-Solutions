@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary meta tags -->
+  <title>Matrix Software Solutions</title>
+  <meta name="title" content="Matrix Software Solutions">
+  <meta name="description" content="Your Trusted IT Solutions Partner">
+
+  <!-- Favicon -->
+     <!--<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">-->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+
+  <!-- JavaScript for smooth scrolling -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          window.scrollTo({
+            behavior: 'smooth',
+            top: targetElement.offsetTop,
+          });
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <!-- Replaced the SVG with text -->
+        <span class="logo-text">Matrix Software Solutions</span>
+      </a>
+  
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <!-- Replaced the SVG with text -->
+            <span class="logo-text">Matrix Software Solutions</span>
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <!-- Home Section -->
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+      
+          <!-- Our Services Section -->
+          <li>
+            <a href="#services" class="navbar-link">Services</a>
+          </li>
+      
+          <!-- Contact Us Section (Footer) -->
+          <li>
+            <a href="#footer" class="navbar-link">Contact Us</a>
+          </li>
+        </ul>
+      
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+      </nav>
+
+<!-- Request a Quote Button (Commented Out)
+<a href="#" class="btn btn-primary">Request a Quote</a>
+-->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header> 
+
+  <!-- Main Content -->
+
+  <main>
+    <article>
+
+      <!-- Hero Section -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Tailored IT Solutions for Your Business</h1>
+
+            <p class="hero-text">
+              Matrix Software Solutions - Your Trusted Partner in IT Solutions.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">Explore Services</a>
+
+              <a href="#" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play Matrix Software Solutions intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Services Section -->
+
+      <section id="services" class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">Our Services</p>
+
+          <h2 class="h2 section-title">
+            Providing Tailored IT Solutions for Your Business
+          </h2>
+
+          <ul class="grid-list">
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="cloud-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Cloud Solutions</h3>
+                <p class="card-text">
+                  Tailored cloud solutions to optimize your IT infrastructure and streamline operations.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="code-working-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Custom Software Development</h3>
+                <p class="card-text">
+                  We create custom software solutions to meet your unique business requirements.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="analytics-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">Data Analytics</h3>
+                <p class="card-text">
+                  Leveraging data insights to drive informed decisions and business growth.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+                <div class="card-icon">
+                  <ion-icon name="server-outline" aria-hidden="true"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">IT Infrastructure</h3>
+                <p class="card-text">
+                  Building and managing robust IT infrastructures for optimal performance and security.
+                </p>
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+            <h2 class="h2 section-title">
+              Your Trusted Partner in IT Solutions
+            </h2>
+
+            <ul>
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Professional Expertise</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    Our team of experts brings years of professional IT experience to every project.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Dedicated Support</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    We provide dedicated support and assistance to ensure your IT solutions run smoothly.
+                  </p>
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+                      <span class="span h5">Cutting-Edge Technology</span>
+                    </button>
+                  </h3>
+                  <p class="accordion-content">
+                    We stay updated with the latest technology trends to deliver innovative solutions.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Join our community by using our services and grow your business.
+          </h2>
+
+          <a href="#" class="btn btn-primary">Get Started</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <!-- Replace with text -->
+          <span class="logo-text">Matrix Software Solutions</span>
+        </a>
+
+        <p class="footer-text">
+          &copy; 2023 Matrix Software Solutions. All rights reserved.
+        </p>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Flemington, New Jersey, USA
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:info@matrixsoftwaresolutions.com" class="footer-link">info@matrixsoftwaresolutions.com</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+
+      <div class="footer-list">
+        <p class="h4 footer-list-title">Newsletter</p>
+        <p class="footer-text">
+          Subscribe to our newsletter to stay updated with our latest services and offers.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+          <button type="submit" class="submit-btn">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
